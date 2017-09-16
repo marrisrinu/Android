@@ -32,7 +32,7 @@ public class BmlsLogin {
 		driver.get("http://dev.v1.buyermls.com");									//sundeep:Gf3An9NiXU@
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.findElement(By.name("username")).sendKeys("james@agent.com");
-		driver.findElement(By.id("pswd")).sendKeys("password");
+		driver.findElement(By.id("pswd")).sendKeys("*******");
 		driver.findElement(By.name("submit")).click();
 		driver.findElement(By.xpath("//*[@id='headeruser-hamburger']")).click();
 //		driver.findElement(By.xpath("//*[@id='headeruser-user']/a")).click();
